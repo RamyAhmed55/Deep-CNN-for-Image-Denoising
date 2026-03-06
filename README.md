@@ -6,14 +6,28 @@ Beyond a Gaussian Denoiser: Residual Learning.
 
 ```
 .
-├── config.py      # Baseline + 3 ablation configs
-├── model.py       # Model architecture
-├── data.py        # Data loading
-├── loss.py        # Loss functions
-├── metrics.py     # Metrics computation
-├── utils.py       # Utilities
+├── config.py      # Training configuration
+├── data.py        # Dataset class and dataloader builder
+├── model.py       # DnCNN model definition
+├── loss.py        # Loss builder
+├── metrics.py     # PSNR and SSIM metrics
+├── utils.py       # Helper utilities
 ├── train.py       # Training script
-└── evaluate.py    # Evaluation script
+├── evaluate.py    # Evaluation script
+├── README.md      # Project documentation
+└── .gitignore     # Ignored files and folders
+
+
+Dataset Structure
+Data/
+├── train/
+└── test/
+    ├── BSD68
+    ├── classic5
+    ├── LIVE1
+    ├── Set5
+    └── Set14
+
 ```
 
 ## Setup
